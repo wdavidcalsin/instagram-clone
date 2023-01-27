@@ -1,1 +1,2 @@
-export { default as sidebarRight } from './sidebarRight';
+export { default as SidebarRight } from './SidebarRight';
+export * from './index';

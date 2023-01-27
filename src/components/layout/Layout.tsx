@@ -1,6 +1,6 @@
-import { Outlet } from 'react-router-dom';
-import NavbarLeft from '../navbar-left/navbarLeft';
-import SidebarRight from '../sidebar-right/sidebarRight';
+import { Outlet } from 'react-router';
+import { NavbarLeft } from '../navbar-left';
+import { SidebarRight } from '../sidebar-right';
 
 const Layout = () => {
   return (
