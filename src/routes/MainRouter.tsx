@@ -3,11 +3,6 @@ import { ListOfRoutes } from '@/constants';
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 
-const testIndex = (val: boolean) => {
-  console.log(val);
-  return val;
-};
-
 const MainRouter = () => {
   return (
     <BrowserRouter>
