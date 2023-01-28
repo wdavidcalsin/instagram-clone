@@ -47,7 +47,17 @@ const MenuButton = () => {
           }}
         >
           <NavMenuIcon />
-          <span>More</span>
+          <Box
+            sx={{
+              display: {
+                xs: 'none',
+                sm: 'none',
+                md: 'block',
+              },
+            }}
+          >
+            More
+          </Box>
         </Button>
       </Box>
       <Menu
@@ -80,7 +90,7 @@ const MenuButton = () => {
               justifyContent: 'space-between',
             }}
           >
-            <div>{ToUppercase(item[1]())}</div>
+            <Box>{ToUppercase(item[1]())}</Box>
             {IconsMenu(item[0])}
           </MenuItem>
         ))}

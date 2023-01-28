@@ -16,7 +16,12 @@ import { MenuButton } from './components';
 const containerStyles: SxProps = {
   display: 'flex',
   flexDirection: 'column',
-  width: '20%',
+  width: {
+    xs: '55px',
+    sm: '55px',
+    md: '55px',
+    lg: '15%',
+  },
   borderRight: '1px solid #DBDBDB',
   height: '100vh',
   padding: '12px',
@@ -74,7 +79,20 @@ const NavbarLeft = () => {
               component={Link}
               to={routeLinks(route[0])}
               key={index}
-              label={route[0]}
+              label={
+                <Box
+                  sx={{
+                    display: {
+                      xs: 'none',
+                      sm: 'none',
+                      md: 'none',
+                      lg: 'block',
+                    },
+                  }}
+                >
+                  {route[0]}
+                </Box>
+              }
               icon={IconsNavRoute(route[0])}
               sx={{
                 padding: 1.5,

@@ -7,15 +7,15 @@ import SmsFailedOutlinedIcon from '@mui/icons-material/SmsFailedOutlined';
 const IconsMenu = (itemName: string) => {
   switch (itemName) {
     case 'settings':
-      return <SettingsOutlinedIcon sx={{ paddingRight: '18px' }} />;
+      return <SettingsOutlinedIcon />;
     case 'saved':
-      return <BookmarkBorderOutlinedIcon sx={{ paddingRight: '18px' }} />;
+      return <BookmarkBorderOutlinedIcon />;
     case 'switch_appearance':
-      return <DarkModeOutlinedIcon sx={{ paddingRight: '18px' }} />;
+      return <DarkModeOutlinedIcon />;
     case 'your_activity':
-      return <AvTimerOutlinedIcon sx={{ paddingRight: '18px' }} />;
+      return <AvTimerOutlinedIcon />;
     case 'report_a_problem':
-      return <SmsFailedOutlinedIcon sx={{ paddingRight: '18px' }} />;
+      return <SmsFailedOutlinedIcon />;
     case 'switch_accounts':
       return null;
     case 'log_out':
