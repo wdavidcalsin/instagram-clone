@@ -1,8 +1,14 @@
+import { ThemeProvider } from '@mui/material';
 import './App.css';
+import { ThemeMui } from './components/styles/mui/ThemeMui';
 import { MainRouter } from './routes';
 
 function App() {
-  return <MainRouter />;
+  return (
+    <ThemeProvider theme={ThemeMui}>
+      <MainRouter />
+    </ThemeProvider>
+  );
 }
 
 export default App;
