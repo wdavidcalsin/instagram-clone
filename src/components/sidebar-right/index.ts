@@ -1,2 +1,2 @@
 export { default as SidebarRight } from './SidebarRight';
-export * from './index';
+export * from './components';

@@ -1,5 +1,30 @@
+import { Stories } from '@/components/stories';
+import { Box } from '@mui/material';
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'right',
+        paddingTop: '40px',
+        marginX: '40px',
+      }}
+    >
+      <Box
+        sx={{
+          width: {
+            xs: '100%',
+            sm: '31rem',
+            md: '31rem',
+            lg: '31rem',
+          },
+        }}
+      >
+        <Stories />
+      </Box>
+    </Box>
+  );
 };
 
 export default Home;

@@ -14,13 +14,16 @@ import { InstagramLogoTxt } from '../svg';
 import { MenuButton } from './components';
 
 const containerStyles: SxProps = {
-  display: 'flex',
   flexDirection: 'column',
   width: {
     xs: '55px',
     sm: '55px',
     md: '55px',
     lg: '15%',
+  },
+  display: {
+    xs: 'none',
+    sm: 'block',
   },
   borderRight: '1px solid #DBDBDB',
   height: '100vh',

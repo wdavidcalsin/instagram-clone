@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@mui/material';
 import './App.css';
-import { ThemeMui } from './components/styles/mui/ThemeMui';
 import { MainRouter } from './routes';
+import { ThemeMui } from './styles';
 
 function App() {
   return (

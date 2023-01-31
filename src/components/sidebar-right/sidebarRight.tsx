@@ -3,7 +3,23 @@ import { ItemProfile, Suggestions } from './components';
 
 const SidebarRight = () => {
   return (
-    <Box sx={{ width: '35rem', paddingTop: '40px' }}>
+    <Box
+      sx={{
+        width: {
+          xs: '80px',
+          sm: '100%',
+          md: '25rem',
+          lg: '35rem',
+        },
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'block',
+          lg: 'block',
+        },
+        paddingTop: '30px',
+      }}
+    >
       <Box
         sx={{
           width: {
