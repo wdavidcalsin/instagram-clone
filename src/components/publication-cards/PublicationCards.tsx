@@ -14,9 +14,9 @@ import {
   CardHeader,
   CardMedia,
   IconButton,
-  TextField,
   Typography,
 } from '@mui/material';
+import { CommentInput } from './components';
 
 const PublicationCards = () => {
   return (
@@ -56,7 +56,13 @@ const PublicationCards = () => {
           alt="Paella dish"
           sx={{ borderRadius: '3px' }}
         />
-        <CardActions sx={{ justifyContent: 'space-between', paddingX: 0 }}>
+        <CardActions
+          sx={{
+            justifyContent: 'space-between',
+            paddingX: 0,
+            paddingY: 0.5,
+          }}
+        >
           <Box>
             <IconButton aria-label="add to favorites">
               <FavoriteBorderOutlinedIcon
@@ -82,26 +88,63 @@ const PublicationCards = () => {
             </IconButton>
           </Box>
         </CardActions>
-        <CardContent>
-          <Typography variant="body2" color="text.secondary">
+        <CardContent sx={{ paddingX: 0, paddingY: 0 }}>
+          <Typography
+            variant="h2"
+            sx={{
+              fontSize: '12px',
+              fontWeight: 'bold',
+              paddingBottom: 0.5,
+            }}
+          >
             230.306 likes
           </Typography>
-          <Box>
-            <Typography variant="body2" color="text.secondary">
-              williandavidcalsin
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              TypeScript is a free and open source programming language
-              developed and maintained by Microsoft.
-            </Typography>
-            <Button>View all 1,720 comments</Button>
-            <TextField
-              id="standard-search"
-              label="Search field"
-              type="search"
-              variant="standard"
-              sx={{ width: '100%' }}
-            />
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              textAlign: 'left',
+            }}
+          >
+            <Box>
+              <Typography
+                variant="h2"
+                sx={{
+                  fontSize: '12px',
+                  fontWeight: 'bold',
+                  display: 'inline',
+                  paddingRight: '5px',
+                }}
+              >
+                williandavidcalsin
+              </Typography>
+
+              <Typography
+                variant="h2"
+                sx={{
+                  fontSize: '12px',
+                  fontWeight: 'normal',
+                  display: 'inline',
+                }}
+              >
+                TypeScript is a free and open source programming language
+                developed and maintained by Microsoft.
+              </Typography>
+            </Box>
+            <Box>
+              <Button
+                sx={{
+                  background: 'none',
+                  padding: 0,
+                  textTransform: 'none',
+                  fontSize: '12px',
+                  color: '#737373',
+                }}
+              >
+                View all 1,720 comments
+              </Button>
+            </Box>
+            <CommentInput />
           </Box>
         </CardContent>
       </Card>
