@@ -1,3 +1,4 @@
+import { PublicationCards } from '@/components';
 import { Stories } from '@/components/stories';
 import { Box } from '@mui/material';
 
@@ -22,6 +23,7 @@ const Home = () => {
         }}
       >
         <Stories />
+        <PublicationCards />
       </Box>
     </Box>
   );

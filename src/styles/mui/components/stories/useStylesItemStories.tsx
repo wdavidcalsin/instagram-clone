@@ -10,7 +10,7 @@ export const useStylesItemStories = makeStyles({
       position: 'absolute',
       width: '3.9rem',
       height: '3.9rem',
-      top: '-.128rem',
+      top: '-.15rem',
       left: '0.05rem',
       borderRadius: '100%',
       zIndex: -1,

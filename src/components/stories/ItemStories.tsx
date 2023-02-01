@@ -1,10 +1,7 @@
-import { ProfileImg } from '@/assets';
-import { useStylesItemStories } from '@/styles';
-import { Button, CardMedia, Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
+import { ProfileAvatar } from '../avatar';
 
 const ItemStories = () => {
-  const classes = useStylesItemStories();
-
   return (
     <Button
       sx={{
@@ -15,16 +12,7 @@ const ItemStories = () => {
         padding: '0',
       }}
     >
-      <CardMedia
-        sx={{
-          width: '3.5rem',
-          height: '3.5rem',
-          borderRadius: '100%',
-        }}
-        image={ProfileImg}
-        title="Wdavid"
-        className={classes.image}
-      />
+      <ProfileAvatar stories={true} />
       <Typography
         variant="h5"
         sx={{

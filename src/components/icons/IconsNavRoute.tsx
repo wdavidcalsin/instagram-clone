@@ -1,11 +1,11 @@
-import HomeIcon from '@mui/icons-material/Home';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
-import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
+import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import ForumOutlinedIcon from '@mui/icons-material/ForumOutlined';
+import HomeIcon from '@mui/icons-material/Home';
+import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 const IconsNavRoute = (routeName: string) => {
   switch (routeName) {
@@ -18,7 +18,8 @@ const IconsNavRoute = (routeName: string) => {
     case 'reels':
       return <OndemandVideoIcon sx={{ paddingRight: '18px' }} />;
     case 'messages':
-      return <TelegramIcon sx={{ paddingRight: '18px' }} />;
+      // return <TelegramIcon sx={{ paddingRight: '18px' }} />;
+      return <ForumOutlinedIcon sx={{ paddingRight: '18px' }} />;
     case 'notifications':
       return <FavoriteBorderOutlinedIcon sx={{ paddingRight: '18px' }} />;
     case 'create':
