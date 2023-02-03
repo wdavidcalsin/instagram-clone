@@ -1,13 +1,12 @@
-import { ThemeProvider } from '@mui/material';
 import './App.css';
+import { ColorModeContextProvider } from './context';
 import { MainRouter } from './routes';
-import { ThemeMui } from './styles';
 
 function App() {
   return (
-    <ThemeProvider theme={ThemeMui}>
+    <ColorModeContextProvider>
       <MainRouter />
-    </ThemeProvider>
+    </ColorModeContextProvider>
   );
 }
 

@@ -11,15 +11,21 @@ const Layout = () => {
       <Box
         sx={{
           flex: 2,
-          marginLeft: {
-            xs: '0',
-            sm: '80px',
-            md: '80px',
-            lg: '16.9%',
-          },
+          bgcolor: 'primary.main',
         }}
       >
-        <Outlet />
+        <Box
+          sx={{
+            marginLeft: {
+              xs: '0',
+              sm: '80px',
+              md: '80px',
+              lg: '16.9%',
+            },
+          }}
+        >
+          <Outlet />
+        </Box>
       </Box>
       <SidebarRight />
     </Container>

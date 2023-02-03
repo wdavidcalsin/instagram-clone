@@ -18,6 +18,7 @@ const SidebarRight = () => {
           lg: 'block',
         },
         paddingTop: '30px',
+        bgcolor: 'primary.main',
       }}
     >
       <Box

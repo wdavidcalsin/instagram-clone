@@ -9,7 +9,12 @@ const Home = () => {
         display: 'flex',
         justifyContent: 'right',
         paddingTop: '40px',
-        marginX: '40px',
+        marginX: {
+          xs: '10px',
+          sm: '20px',
+          md: '40px',
+          lg: '40px',
+        },
       }}
     >
       <Box

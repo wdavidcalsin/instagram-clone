@@ -20,7 +20,7 @@ import { CommentInput } from './components';
 
 const PublicationCards = () => {
   return (
-    <Box sx={{ background: 'orange', textAlign: 'left' }}>
+    <Box sx={{ textAlign: 'left' }}>
       <Card sx={{ width: '100%', boxShadow: 'none' }}>
         <CardHeader
           sx={{ paddingX: 0 }}

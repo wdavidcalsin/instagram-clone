@@ -7,11 +7,13 @@ import {
   SxProps,
 } from '@mui/material';
 import Box from '@mui/material/Box';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 import { Link } from 'react-router-dom';
 import { IconsNavRoute } from '../icons';
 import { InstagramLogoTxt } from '../svg';
 import { MenuButton } from './components';
+import { useColorMode } from '@/context';
 
 const containerStyles: SxProps = {
   flexDirection: 'column',
@@ -31,6 +33,7 @@ const containerStyles: SxProps = {
   position: 'fixed',
   top: '0px',
   left: '0px',
+  bgcolor: 'primary.main',
 };
 
 const routeLinks = (route: string) => {
@@ -39,6 +42,8 @@ const routeLinks = (route: string) => {
 
 const NavbarLeft = () => {
   const [value, setValue] = React.useState(0);
+
+  const { mode } = useColorMode();
 
   return (
     <Box sx={containerStyles}>
@@ -59,9 +64,31 @@ const NavbarLeft = () => {
             height: 'auto',
           }}
         >
-          <Link to="/">
-            <InstagramLogoTxt fill="rgb(38,38,38)" width="103px" />
-          </Link>
+          <Box
+            sx={{
+              display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' },
+            }}
+          >
+            <Link to="/">
+              <InstagramLogoTxt
+                fill={mode === 'light' ? '#121212' : '#ffffff'}
+                width="103px"
+              />
+            </Link>
+          </Box>
+
+          <Box
+            sx={{
+              display: { xs: 'block', sm: 'block', md: 'block', lg: 'none' },
+            }}
+          >
+            <Link to="/">
+              <InstagramIcon
+                width="103px"
+                sx={{ color: 'secondary.contrastText' }}
+              />
+            </Link>
+          </Box>
         </Box>
 
         <BottomNavigation
@@ -104,7 +131,7 @@ const NavbarLeft = () => {
                 textTransform: 'capitalize',
                 width: '100%',
                 borderRadius: 20,
-                color: 'rgb(38,38,38)',
+                color: 'secondary.contrastText',
               }}
             />
           ))}

@@ -5,9 +5,12 @@ import { ToUppercase } from '@/utilities';
 import { Box, Button } from '@mui/material';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { useColorMode } from '@/context';
 
 const MenuButton = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+
+  const { toggleColorMode } = useColorMode();
 
   const open = Boolean(anchorEl);
 
@@ -43,7 +46,7 @@ const MenuButton = () => {
             width: 'auto',
             justifyContent: 'left',
             borderRadius: 20,
-            color: 'rgb(38,38,38)',
+            color: 'secondary.contrastText',
           }}
         >
           <NavMenuIcon />
@@ -52,7 +55,8 @@ const MenuButton = () => {
               display: {
                 xs: 'none',
                 sm: 'none',
-                md: 'block',
+                md: 'none',
+                lg: 'block',
               },
             }}
           >
@@ -78,22 +82,39 @@ const MenuButton = () => {
           horizontal: 'left',
         }}
       >
-        {Object.entries(ListOfMenu).map((item, index) => (
-          <MenuItem
-            key={index}
-            onClick={handleClose}
-            sx={{
-              fontSize: '16px',
-              textTransform: 'none',
-              width: '15rem',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
-            <Box>{ToUppercase(item[1]())}</Box>
-            {IconsMenu(item[0])}
-          </MenuItem>
-        ))}
+        {Object.entries(ListOfMenu).map((item, index) =>
+          item[0] === 'switch_appearance' ? (
+            <MenuItem
+              key={index}
+              onClick={toggleColorMode}
+              sx={{
+                fontSize: '16px',
+                textTransform: 'none',
+                width: '15rem',
+                display: 'flex',
+                justifyContent: 'space-between',
+              }}
+            >
+              <Box>{ToUppercase(item[1]())}</Box>
+              {IconsMenu(item[0])}
+            </MenuItem>
+          ) : (
+            <MenuItem
+              key={index}
+              onClick={handleClose}
+              sx={{
+                fontSize: '16px',
+                textTransform: 'none',
+                width: '15rem',
+                display: 'flex',
+                justifyContent: 'space-between',
+              }}
+            >
+              <Box>{ToUppercase(item[1]())}</Box>
+              {IconsMenu(item[0])}
+            </MenuItem>
+          )
+        )}
       </Menu>
     </>
   );
