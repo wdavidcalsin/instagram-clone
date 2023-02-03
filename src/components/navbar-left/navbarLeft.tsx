@@ -1,19 +1,20 @@
 import * as React from 'react';
+import { useStylesButtonAction } from '@/styles';
 
 import { ListOfRoutes } from '@/constants';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import {
   BottomNavigation,
   BottomNavigationAction,
   SxProps,
 } from '@mui/material';
 import Box from '@mui/material/Box';
-import InstagramIcon from '@mui/icons-material/Instagram';
 
+import { useColorMode } from '@/context';
 import { Link } from 'react-router-dom';
 import { IconsNavRoute } from '../icons';
 import { InstagramLogoTxt } from '../svg';
 import { MenuButton } from './components';
-import { useColorMode } from '@/context';
 
 const containerStyles: SxProps = {
   flexDirection: 'column',
@@ -42,6 +43,8 @@ const routeLinks = (route: string) => {
 
 const NavbarLeft = () => {
   const [value, setValue] = React.useState(0);
+
+  const classes = useStylesButtonAction();
 
   const { mode } = useColorMode();
 
@@ -133,6 +136,7 @@ const NavbarLeft = () => {
                 borderRadius: 20,
                 color: 'secondary.contrastText',
               }}
+              classes={{ root: classes.root }}
             />
           ))}
         </BottomNavigation>
