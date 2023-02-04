@@ -7,11 +7,10 @@ const CommentInputStyle = styled.textarea`
   line-height: 1.5;
   font-size: 14px;
   margin-top: 10px;
-  background: white;
+  background: ${(props) => props.theme.palette.primary.main};
   border: none;
-  color: rgb(38, 38, 38);
-  border-bottom: 1px solid #dbdbdb;
-  border-radius: 3px;
+  color: ${(props) => props.theme.palette.secondary.contrastText};
+  border-bottom: 1px solid ${(props) => props.theme.palette.border.main};
 
   &:focus-visible {
     outline: none;

@@ -1,6 +1,7 @@
 import { getDesignTokens } from '@/styles';
 import { themeMode } from '@/types';
 import { createTheme, ThemeProvider } from '@mui/material';
+import { ThemeProvider as ThemeProviderStyled } from 'styled-components';
 import * as React from 'react';
 
 interface IColorModeContext {
@@ -34,7 +35,9 @@ export const ColorModeContextProvider: React.FC<Props> = ({ children }) => {
 
   return (
     <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <ThemeProviderStyled theme={theme}>{children}</ThemeProviderStyled>
+      </ThemeProvider>
     </ColorModeContext.Provider>
   );
 };

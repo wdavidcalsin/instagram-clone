@@ -21,7 +21,11 @@ const ItemProfile = () => {
         <Box paddingX={2} sx={{ textAlign: 'left' }}>
           <Typography
             variant="h5"
-            sx={{ fontSize: '14px', fontWeight: 'bold' }}
+            sx={{
+              fontSize: '14px',
+              fontWeight: 'bold',
+              color: 'secondary.contrastText',
+            }}
             gutterBottom
           >
             williandavidcalsin

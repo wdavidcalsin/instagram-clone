@@ -12,6 +12,9 @@ export const getDesignTokens = (mode: themeMode) => ({
             main: '#ffffff',
             contrastText: '#121212',
           },
+          border: {
+            main: '#DBDBDB',
+          },
         }
       : {
           primary: {
@@ -20,6 +23,9 @@ export const getDesignTokens = (mode: themeMode) => ({
           secondary: {
             main: '#262626',
             contrastText: '#ffffff',
+          },
+          border: {
+            main: '#303030',
           },
         }),
   },

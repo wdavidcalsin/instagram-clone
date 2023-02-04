@@ -21,14 +21,14 @@ import { CommentInput } from './components';
 const PublicationCards = () => {
   return (
     <Box sx={{ textAlign: 'left' }}>
-      <Card sx={{ width: '100%', boxShadow: 'none' }}>
+      <Card sx={{ width: '100%', boxShadow: 'none', bgcolor: 'primary.main' }}>
         <CardHeader
-          sx={{ paddingX: 0 }}
+          sx={{ paddingX: 0, bgcolor: 'primary.main' }}
           avatar={<Avatar alt="Willian David" src={ProfileImg} />}
           action={
             <IconButton aria-label="settings">
               <MoreHorizIcon
-                sx={{ fontSize: '25px', color: 'rgb(38,38,38)' }}
+                sx={{ fontSize: '25px', color: 'secondary.contrastText' }}
               />
             </IconButton>
           }
@@ -54,41 +54,42 @@ const PublicationCards = () => {
           component="img"
           image={TypescriptImagePublications}
           alt="Paella dish"
-          sx={{ borderRadius: '3px' }}
+          sx={{ borderRadius: '3px', bgcolor: 'primary.main' }}
         />
         <CardActions
           sx={{
             justifyContent: 'space-between',
             paddingX: 0,
             paddingY: 0.5,
+            bgcolor: 'primary.main',
           }}
         >
           <Box>
             <IconButton aria-label="add to favorites">
               <FavoriteBorderOutlinedIcon
-                sx={{ color: 'rgb(38,38,38)', fontSize: '25px' }}
+                sx={{ color: 'secondary.contrastText', fontSize: '25px' }}
               />
             </IconButton>
             <IconButton aria-label="comment">
               <ModeCommentOutlinedIcon
-                sx={{ color: 'rgb(38,38,38)', fontSize: '25px' }}
+                sx={{ color: 'secondary.contrastText', fontSize: '25px' }}
               />
             </IconButton>
             <IconButton aria-label="send">
               <SendOutlinedIcon
-                sx={{ color: 'rgb(38,38,38)', fontSize: '25px' }}
+                sx={{ color: 'secondary.contrastText', fontSize: '25px' }}
               />
             </IconButton>
           </Box>
           <Box>
             <IconButton aria-label="share">
               <BookmarkBorderOutlinedIcon
-                sx={{ color: 'rgb(38,38,38)', fontSize: '25px' }}
+                sx={{ color: 'secondary.contrastText', fontSize: '25px' }}
               />
             </IconButton>
           </Box>
         </CardActions>
-        <CardContent sx={{ paddingX: 0, paddingY: 0 }}>
+        <CardContent sx={{ paddingX: 0, paddingY: 0, bgcolor: 'primary.main' }}>
           <Typography
             variant="h2"
             sx={{

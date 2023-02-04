@@ -17,7 +17,7 @@ const ItemStories = () => {
         variant="h5"
         sx={{
           fontSize: '12px',
-          color: 'rgba(0, 0, 0, 0.87)',
+          color: 'secondary.contrastText',
           textTransform: 'lowercase',
           marginTop: '7px',
         }}
