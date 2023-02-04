@@ -19,3 +19,11 @@ export const ListOfRoutes = {
   create: () => <Create />,
   profile: () => <Profile />,
 };
+
+export const ListOfRoutesMobile = {
+  home: () => <Home />,
+  search: () => <Search />,
+  reels: () => <Reels />,
+  messages: () => <Messages />,
+  profile: () => <Profile />,
+};

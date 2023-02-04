@@ -9,3 +9,18 @@ export const useStylesButtonAction = makeStyles((theme) => ({
     },
   },
 }));
+
+export const useStylesButtonActionMobile = makeStyles((theme) => ({
+  root: {
+    color: theme.palette.secondary.contrastText,
+
+    '&.Mui-selected': {
+      color: theme.palette.secondary.contrastText + '!important',
+    },
+  },
+  iconOnly: {
+    '&.css-7qz5r-MuiSvgIcon': {
+      padding: 0,
+    },
+  },
+}));
