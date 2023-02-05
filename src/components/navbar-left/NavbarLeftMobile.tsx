@@ -16,11 +16,8 @@ const containerStyles: SxProps = {
   width: '100%',
   borderTop: '1px solid',
   borderColor: 'border.main',
+  bgcolor: 'primary.main',
   height: '4rem',
-  position: 'fixed',
-  bottom: '0px',
-  left: '0px',
-  bgcolor: 'red',
 };
 
 const routeLinks = (route: string) => {

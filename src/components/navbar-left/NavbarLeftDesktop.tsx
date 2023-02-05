@@ -17,21 +17,13 @@ import { InstagramLogoTxt } from '../svg';
 import { MenuButton } from './components';
 
 const containerStyles: SxProps = {
+  width: '100%',
+  display: 'flex',
   flexDirection: 'column',
-  width: {
-    xs: '55px',
-    sm: '55px',
-    md: '55px',
-    lg: '15%',
-  },
-
   borderRight: '1px solid',
   borderColor: 'border.main',
   height: '100vh',
   padding: '12px',
-  position: 'fixed',
-  top: '0px',
-  left: '0px',
   bgcolor: 'primary.main',
 };
 
@@ -50,6 +42,7 @@ const NavbarLeftDesktop = () => {
     <Box sx={containerStyles}>
       <Box
         sx={{
+          width: '100%',
           height: '100%',
           display: 'flex',
           flexDirection: 'column',

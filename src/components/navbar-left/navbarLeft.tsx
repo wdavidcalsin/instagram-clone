@@ -7,19 +7,35 @@ const NavbarLeft = () => {
     <>
       <Box
         sx={{
-          flex: 1,
+          position: 'fixed',
+          top: '0px',
+          left: '0px',
+          zIndex: 10,
+
           display: {
             xs: 'none',
             sm: 'block',
             md: 'block',
             lg: 'block',
           },
+          width: {
+            xs: '55px',
+            sm: '55px',
+            md: '55px',
+            lg: '14.1rem',
+          },
+          bgcolor: 'orange',
         }}
       >
         <NavbarLeftDesktop />
       </Box>
       <Box
         sx={{
+          position: 'fixed',
+          bottom: '0px',
+          left: '0px',
+          right: '0px',
+          zIndex: 10,
           display: {
             xs: 'block',
             sm: 'none',

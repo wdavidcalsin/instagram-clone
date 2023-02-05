@@ -12,18 +12,16 @@ const Layout = () => {
         sx={{
           flex: 2,
           bgcolor: 'primary.main',
+          height: '100vh',
+          marginLeft: {
+            xs: '0',
+            sm: '80px',
+            md: '80px',
+            lg: '15.5rem',
+          },
         }}
       >
-        <Box
-          sx={{
-            marginLeft: {
-              xs: '0',
-              sm: '80px',
-              md: '80px',
-              lg: '16.9%',
-            },
-          }}
-        >
+        <Box>
           <Outlet />
         </Box>
       </Box>
