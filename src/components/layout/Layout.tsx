@@ -13,11 +13,11 @@ const Layout = () => {
           flex: 2,
           bgcolor: 'primary.main',
           height: '100vh',
-          marginLeft: {
+          paddingLeft: {
             xs: '0',
             sm: '80px',
             md: '80px',
-            lg: '15.5rem',
+            lg: '15.8rem',
           },
         }}
       >

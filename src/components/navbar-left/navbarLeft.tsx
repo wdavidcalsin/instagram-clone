@@ -19,9 +19,9 @@ const NavbarLeft = () => {
             lg: 'block',
           },
           width: {
-            xs: '55px',
-            sm: '55px',
-            md: '55px',
+            xs: '80px',
+            sm: '80px',
+            md: '80px',
             lg: '14.1rem',
           },
           bgcolor: 'orange',

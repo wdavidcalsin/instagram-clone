@@ -3,6 +3,7 @@ export * from './icons';
 export * from './layout';
 export * from './navbar-left/components';
 export * from './navbar-left';
+export * from './publication-cards/components';
 export * from './publication-cards';
 export * from './sidebar-right/components';
 export * from './sidebar-right';

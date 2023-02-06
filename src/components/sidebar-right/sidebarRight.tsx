@@ -6,8 +6,6 @@ const SidebarRight = () => {
     <Box
       sx={{
         width: {
-          xs: '80px',
-          sm: '100%',
           md: '25rem',
           lg: '35rem',
         },
@@ -26,7 +24,7 @@ const SidebarRight = () => {
           width: {
             xs: '100%',
             sm: '60%',
-            md: '60%',
+            md: '100%',
             lg: '60%',
           },
         }}
