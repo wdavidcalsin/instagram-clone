@@ -34,8 +34,6 @@ const NavbarLeftDesktop = () => {
 
   const classes = useStylesButtonAction();
 
-  const { mode } = useColorMode();
-
   return (
     <Box sx={containerStyles}>
       <Box
