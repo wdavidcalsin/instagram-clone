@@ -1,2 +1,2 @@
-export { default as ItemProfile } from './ItemProfile';
-export { default as Suggestions } from './Suggestions';
+export { default as ItemProfile } from './itemProfile';
+export { default as Suggestions } from './suggestions';

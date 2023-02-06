@@ -1,1 +1,1 @@
-export * from './ButtonNavActionStyled';
+export * from './buttonNavActionStyled';

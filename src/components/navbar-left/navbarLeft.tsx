@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
-import NavbarLeftDesktop from './navbar-left-desktop';
-import NavbarLeftMobile from './navbar-left-mobile';
+import NavbarLeftDesktop from './navbarLeftDesktop';
+import NavbarLeftMobile from './navbarLeftMobile';
 
 const NavbarLeft = () => {
   return (

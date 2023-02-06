@@ -1,9 +1,9 @@
-export { default as Create } from './Create';
-export { default as Explore } from './Explore';
-export { default as Home } from './Home';
-export { default as Messages } from './Messages';
-export { default as Notifications } from './Notifications';
-export { default as Profile } from './Profile';
-export { default as Reels } from './Reels';
-export { default as Search } from './Search';
+export { default as Create } from './create';
+export { default as Explore } from './explore';
+export { default as Home } from './home';
+export { default as Messages } from './messages';
+export { default as Notifications } from './notifications';
+export { default as Profile } from './profile';
+export { default as Reels } from './reels';
+export { default as Search } from './search';
 export * from './index';

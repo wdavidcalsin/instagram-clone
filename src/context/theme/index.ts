@@ -1,1 +1,1 @@
-export * from './ColorModeContext';
+export * from './colorModeContext';

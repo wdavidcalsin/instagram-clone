@@ -1,1 +1,1 @@
-export { default as MainRouter } from './MainRouter';
+export { default as MainRouter } from './mainRouter';

@@ -1,1 +1,1 @@
-export { default as InstagramLogoTxt } from './InstagramLogoTxt';
+export { default as InstagramLogoTxt } from './instagramLogoTxt';

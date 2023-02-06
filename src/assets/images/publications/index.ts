@@ -1,1 +1,1 @@
-export { default as TypescriptImagePublications } from './TypeScriptImage.jpg';
+export { default as TypescriptImagePublications } from './typeScriptImage.jpg';

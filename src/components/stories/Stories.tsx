@@ -1,7 +1,7 @@
 import { carouselConfigurations } from '@/setting';
 import { Box } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
-import ItemStories from './ItemStories';
+import ItemStories from './itemStories';
 
 const Stories = () => {
   const range = 6;

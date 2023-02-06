@@ -1,2 +1,2 @@
-export { default as PublicationCards } from './PublicationCards';
+export { default as PublicationCards } from './publicationCards';
 export * from './components';

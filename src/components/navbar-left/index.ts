@@ -1,4 +1,4 @@
 export { default as NavbarLeft } from './navbarLeft';
-export { default as NavbarLeftDesktop } from './navbar-left-desktop';
-export { default as NavbarLeftMobile } from './navbar-left-mobile';
+export { default as NavbarLeftDesktop } from './navbarLeftDesktop';
+export { default as NavbarLeftMobile } from './navbarLeftMobile';
 export * from './components';

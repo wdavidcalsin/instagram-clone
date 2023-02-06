@@ -1,4 +1,14 @@
-import { CarouselProps } from 'react-material-ui-carousel';
+interface CarouselProps {
+  autoPlay: boolean;
+  animation: 'fade' | 'slide';
+  indicators: boolean;
+  duration: number;
+  navButtonsAlwaysVisible: boolean;
+  navButtonsAlwaysInvisible: boolean;
+  cycleNavigation: boolean;
+  fullHeightHover: boolean;
+  swipe: boolean;
+}
 
 export const carouselConfigurations: CarouselProps = {
   autoPlay: false,

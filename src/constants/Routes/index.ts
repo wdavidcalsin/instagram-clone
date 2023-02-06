@@ -1,1 +1,1 @@
-export * from './ListOfRoutes';
+export * from './listOfRoutes';

@@ -1,2 +1,2 @@
-export { default as ItemStories } from './ItemStories';
-export { default as Stories } from './Stories';
+export { default as ItemStories } from './itemStories';
+export { default as Stories } from './stories';

@@ -1,1 +1,1 @@
-export * from './ToUppercase';
+export * from './toUppercase';
