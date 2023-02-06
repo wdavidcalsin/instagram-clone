@@ -10,7 +10,6 @@ import {
 } from '@mui/material';
 import Box from '@mui/material/Box';
 
-import { useColorMode } from '@/context';
 import { Link } from 'react-router-dom';
 import { IconsNavRoute } from '../icons';
 import { InstagramLogo, MenuButton } from './components';
