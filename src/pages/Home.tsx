@@ -8,9 +8,8 @@ const Home = () => {
       sx={{
         display: 'flex',
         justifyContent: 'right',
-        paddingTop: '40px',
         marginX: {
-          xs: '10px',
+          xs: '0px',
           sm: '20px',
           md: '40px',
           lg: '40px',

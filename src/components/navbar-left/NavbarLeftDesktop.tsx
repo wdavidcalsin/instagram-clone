@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { useStylesButtonAction } from '@/styles';
+import * as React from 'react';
 
 import { ListOfRoutes } from '@/constants';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -13,8 +13,7 @@ import Box from '@mui/material/Box';
 import { useColorMode } from '@/context';
 import { Link } from 'react-router-dom';
 import { IconsNavRoute } from '../icons';
-import { InstagramLogoTxt } from '../svg';
-import { MenuButton } from './components';
+import { InstagramLogo, MenuButton } from './components';
 
 const containerStyles: SxProps = {
   display: 'flex',
@@ -63,10 +62,7 @@ const NavbarLeftDesktop = () => {
             }}
           >
             <Link to="/">
-              <InstagramLogoTxt
-                fill={mode === 'light' ? '#121212' : '#ffffff'}
-                width="103px"
-              />
+              <InstagramLogo />
             </Link>
           </Box>
 

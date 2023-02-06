@@ -9,7 +9,25 @@ const Stories = () => {
   const numbers = Array.from({ length: range }, (_, i) => i + 1);
 
   return (
-    <Box sx={{ textAlign: 'left', width: '100%', marginBottom: '40px' }}>
+    <Box
+      sx={{
+        textAlign: 'left',
+        width: '100%',
+        paddingY: '20px',
+        borderBottom: {
+          xs: '1px solid',
+          sm: 'none',
+          md: 'none',
+          lg: 'none',
+        },
+        borderBottomColor: {
+          xs: 'border.main',
+          sm: 'none',
+          md: 'none',
+          lg: 'none',
+        },
+      }}
+    >
       <Carousel
         {...carouselConfigurations}
         navButtonsProps={{

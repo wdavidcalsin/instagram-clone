@@ -89,7 +89,13 @@ const PublicationCards = () => {
             </IconButton>
           </Box>
         </CardActions>
-        <CardContent sx={{ paddingX: 0, paddingY: 0, bgcolor: 'primary.main' }}>
+        <CardContent
+          sx={{
+            paddingX: { xs: '10px', sm: 0, md: 0, lg: 0 },
+            paddingY: 0,
+            bgcolor: 'primary.main',
+          }}
+        >
           <Typography
             variant="h2"
             sx={{

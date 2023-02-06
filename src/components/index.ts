@@ -1,4 +1,5 @@
 export * from './avatar';
+export * from './header-mobile';
 export * from './icons';
 export * from './layout';
 export * from './navbar-left/components';
